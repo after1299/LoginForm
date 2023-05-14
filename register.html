@@ -19,30 +19,35 @@
 
 <body>
     <div class="formContainer d-flex justify-content-center align-items-center h-100vh w-100vw">
-        <form action="" class="form m-3">
+        <div class="form m-3">
 
             <h2 class="formTitle mb-4">Register</h2>
 
-            <div class="formBody position-relative mb-2">
-                <input type="text" class="formInput position-absolute" placeholder=" ">
+            <div class="formBody position-relative">
+                <input type="text" class="formInput position-absolute" id="userName" maxlength="12" placeholder=" ">
                 <label for="" class="formLabel position-absolute">Username</label>
+                <label for="" class="ipnutPH position-absolute">6~12碼，包含英文及數字</label>
             </div>
 
-            <div class="formBody position-relative mb-2">
-                <input type="password" class="formInput position-absolute" placeholder=" ">
+            <div class="formBody position-relative mt-2">
+                <input type="password" class="formInput position-absolute" id="pwd" placeholder=" ">
                 <label for="" class="formLabel position-absolute">Password</label>
+                <label for="" class="ipnutPH position-absolute">8~16碼，包含英文大小寫及數字</label>
             </div>
 
-            <div class="formBody position-relative mb-3">
-                <input type="password" class="formInput position-absolute" placeholder=" ">
+            <div class="formBody position-relative mt-2 mb-3">
+                <input type="password" class="formInput position-absolute" id="confirmPwd" placeholder=" ">
                 <label for="" class="formLabel position-absolute">Confirm Password</label>
+                <label for="" class="ipnutPH position-absolute">確認密碼，須與上方密碼欄位相同</label>
             </div>
 
-            <button class="btn btn-primary w-100">Register</button>
+            <button class="btn btn-primary w-100" id="registerBtn">Register</button>
 
-            <p class="text-secondary text-center">Already have account? <a href="">Login</a></p>
-        </form>
+            <p class="text-secondary text-center">Already have account? <a href="./login.html">Login</a></p>
+        </div>
     </div>
+
+    <script src="./register.js"></script>
 </body>
 
 </html>

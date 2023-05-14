@@ -4,7 +4,7 @@
 
 :root {
     --button-color: #007bff;
-    --input-color: #90979c;
+    --input-color: #70767a;
     --border-color: #DADCE0;
     --normal-font-size: 1rem;
     --small-font-size: .75rem;
@@ -24,7 +24,7 @@ body {
 }
 
 .form {
-    width: 350px;
+    width: 400px;
     padding: 4rem 2rem;
     border-radius: 1rem;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
@@ -62,7 +62,7 @@ body {
     top: -.5rem;
     left: .8rem;
 
-    z-index: 2;
+    z-index: 5;
 }
 
 .formInput:not(:placeholder-shown).formInput:not(:focus)+.formLabel {
@@ -72,7 +72,7 @@ body {
     top: -.5rem;
     left: .8rem;
 
-    z-index: 2;
+    z-index: 5;
 }
 
 
@@ -87,4 +87,27 @@ body {
     color: var(--input-color);
 
     transition: all .3s ease;
+}
+
+.ipnutPH {
+    top: .7rem;
+    left: 1rem;
+
+    padding: 0 .25rem;
+    background: #fff;
+
+    font-size: var(--normal-font-size);
+    color: var(--input-color);
+
+    opacity: 0;
+
+    transition: all .1s ease;
+}
+
+.formInput:focus~.ipnutPH {
+    opacity: 1;
+}
+
+.formInput:not(:placeholder-shown)~.ipnutPH {
+    opacity: 0;
 }
