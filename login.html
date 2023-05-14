@@ -14,26 +14,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- main css -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 
 <body>
-    <div class="animation-form">
-        <form action="" class="form">
+    <div class="formContainer d-flex justify-content-center align-items-center h-100vh w-100vw">
+        <form action="" class="form m-3">
 
-            <h1 class="form-title">Sign In</h1>
+            <h2 class="formTitle mb-4">Login</h2>
 
-            <div class="form-div">
-                <input type="text" class="form-input" placeholder=" ">
-                <label for="" class="form-label">Email</label>
+            <div class="formBody position-relative mb-2">
+                <input type="text" class="formInput position-absolute" placeholder=" ">
+                <label for="" class="formLabel position-absolute">Username</label>
             </div>
 
-            <div class="form-div">
-                <input type="password" class="form-input" placeholder=" ">
-                <label for="" class="form-label">Password</label>
+            <div class="formBody position-relative mb-3">
+                <input type="password" class="formInput position-absolute" placeholder=" ">
+                <label for="" class="formLabel position-absolute">Password</label>
             </div>
 
-            <input type="submit" class="form-button" value="Sign In">
+            <button class="btn btn-primary w-100">Login</button>
+
+            <p class="text-secondary text-center pl-2">Do not have account? <a href="">Sign up</a></p>
         </form>
     </div>
 </body>
