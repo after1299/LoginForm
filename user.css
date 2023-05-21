@@ -1,0 +1,48 @@
+.h-100vh {
+    height: 100vh;
+}
+
+.w-100vw {
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mdForm {
+    max-width: 600px;
+    padding: 2rem 0rem;
+}
+
+.mdForm label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #777777;
+}
+
+.input {
+    height: 48px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    width: 100%;
+    padding-left: .5rem;
+    transition: all .3s ease;
+}
+
+.input:disabled {
+    color: #999999;
+    background: none;
+    font-style: italic;
+}
+
+.input.disableInput {
+    border-bottom: none;
+}
+
+.input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #007bff;
+}
